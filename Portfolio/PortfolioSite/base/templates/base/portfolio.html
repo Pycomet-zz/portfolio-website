@@ -1,0 +1,173 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div id="tabs" class="col-sm-6 col-lg-3">
+                <h4>Tools</h4>
+                <hr>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>PyCharm</li>
+                    <li>Vim</li>
+                    <li>Git Bash</li>
+                    <li>SublimeText</li>
+                </ul>
+            </div>
+            <div id="tabs" class="col-sm-6 col-lg-3">
+                <h4>Competent Skills</h4>
+                <hr>
+                <ul>
+                    <li>Python Language</li>
+                    <li>Django Framework</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div id="tabs" class="col-sm-6 col-lg-3">
+                <h4>Platforms(OS)</h4>
+                <hr>
+                <ul>
+                    <li>Android</li>
+                    <li>Ubuntu (Linux)</li>
+                    <li>Windows</li>
+                    <li>Mac OS</li>
+                    <li>IBM's z/OS mainframe</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 class="bg-dark card"><span>WORK HISTORY</span></h1>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div id="tabs">
+                <div class="col-lg-1">    
+                    <img class="img-fluid" src="{% static 'img/portfolio/fiverr.png' %}" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <em>Freelance Python Programmer</em>
+                    </div>
+                    <div class="col-lg-9">
+                        September 2018 - Present
+                    </div>
+                </div>
+                <hr>
+                <ul>
+                    <li>Scrape and extract data from any kind of website to be used on real-time data analysis</li>
+                    <li>Create web automation bots</li>
+                    <li>Working with Telegram API to develop chatbot softwares</li>
+                    <li>Write softwares for office task automation</li>
+                    <li>Debug and deliver python based assignments or projects</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="tabs">
+                <div class="col-lg-1">    
+                    <img class="img-fluid" src="{% static 'img/portfolio/fiverr.png' %}" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <em>Freelance Web Developer</em>
+                    </div>
+                    <div class="col-lg-9">
+                        Feburary 2019 - Present
+                    </div>
+                </div>
+                <hr>
+                <ul>
+                    <li>Build Websites with Django framework</li>
+                    <li>Front End Web Development</li>
+                    <li>Debug and remove bugs from client's sites</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 class="bg-dark card"><span>MY PROJECTS</span></h1>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div id="tabs" class="col-lg-5">
+                    <a href="">
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="{% static 'base/img/github.png' %}" alt="">    
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Portfolio Website</h3>      
+                        </div>
+                        <hr>
+                        <a class="small-muted" href="">Go To Github</a>
+                    </a>
+                </div>
+
+                <div id="tabs" class="col-lg-5">
+                    <a href="">
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="{% static 'base/img/github.png' %}" alt="">    
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Medical Web Application</h3>      
+                        </div>
+                        <hr>
+                        <a class="small-muted" href="">Go To Github</a>
+                    </a>
+                </div>
+
+                <div id="tabs" class="col-lg-5">
+                    <a href="">
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="{% static 'base/img/github.png' %}" alt="">    
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Web-Scraping Tool</h3>      
+                        </div>
+                        <hr>
+                        <a class="small-muted" href="">Go To Github</a>
+                    </a>
+                </div>
+
+                <div id="tabs" class="col-lg-5">
+                    <a href="">
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="{% static 'base/img/github.png' %}" alt="">    
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Telegram-Whatsapp Bot</h3>      
+                        </div>
+                        <hr>
+                        <a class="small-muted" href="">Go To Github</a>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 class="bg-dark card"><span>EDUCATION</span></h1>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

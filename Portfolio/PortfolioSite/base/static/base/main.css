@@ -1,0 +1,148 @@
+body {
+    color: rgb(4, 72, 133);
+    height: 100%;
+    width: 100%;
+    background: url('bk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#picture {
+    background: url(background12.jpg); 
+}
+
+
+h2 {
+    font-family: cursive;
+    font-size: 6.5rem;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.876);
+    text-align: unset;
+    margin: auto
+}
+
+.go {
+    padding-left: 60%
+}
+
+img {
+    width: 300px;
+    height: 300px
+}
+
+#head {
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: linen;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#mail {
+    margin-left: 70rem
+}
+
+#yellow {
+    color: black
+}
+
+h4 {
+    color: rgba(5, 1, 1, 0.904);
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center
+}
+
+#card {
+    font-family: cursive
+}
+
+#mine {
+    margin: 5% auto;
+    text-align: auto
+}
+
+.row {
+    text-align: center;
+    margin: auto auto
+}
+
+ul {
+    text-align: left
+}
+
+#tabs {
+    background-color: rgba(240, 248, 255, 0.541);
+    padding: 10px;
+    margin: 5% auto;
+    text-align: left
+}
+
+em {
+    text-align: right
+}
+
+span {
+    color: rgb(255, 157, 0);
+    font-weight: bold
+    /* border-bottom: 2px solid rgb(247, 106, 25) */
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    margin: auto;
+    color: rgb(54, 58, 3);
+    font-weight: bold;
+}
+
+#one {
+    color: rgba(252, 114, 22, 0.979);
+    font-size: 15px
+}
+
+.jumbotron {
+    text-align: left;
+    font-size: 40px;
+    margin: 20% auto;
+}
+
+.navbar-brand {
+    color: honeydew
+}
+
+img {
+    background: url("backing.jpg")
+}
+
+.cont {
+    padding-top: 20px
+}
+
+#content {
+    margin: 2% auto;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.89);
+    background-color: rgba(187, 59, 97, 0.424)
+}
+
+.fixed-bottom {
+    background-color: rgba(93, 147, 194, 0.328);
+}
+
+hr {
+    border-bottom: 1px solid #66cbfa
+}
+
+#articles {
+    background: rgb(110, 172, 253);
+    color: azure;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    float: left;
+    width: 30%;
+}
