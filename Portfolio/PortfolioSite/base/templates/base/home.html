@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <div id='mine' class="container-fluid">
+    <div id='mine' class="container-fluid row">
         {% if messages %}
             {% for message in messages %}
                 <div class='alert alert-{{message.tags}}'>
@@ -10,9 +10,13 @@
                 </div>
             {% endfor %}
         {% endif %}
-        <img class="rounded-circle" src="{% static 'base/img/picture.jpg' %}">
-        <h2><i class="fab fa-python"></i> <span>Alfred  </span>Emmanuel Inyang</h2>
-        <h4>Python Web Developer - Programmer</h4>
+        <div class="col-lg-1">
+            <img class="rounded-circle" src="{% static 'base/img/picture.jpg' %}">
+        </div>
+        <div class="col-lg-11">
+            <h2><span>Alfred  </span>Emmanuel Inyang <i class="fab fa-python"></i> </h2>
+            <h4>Python Web Developer - Programmer</h4>
+        </div>
     </div>
     
 
