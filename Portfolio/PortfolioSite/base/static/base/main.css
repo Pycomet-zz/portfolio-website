@@ -26,9 +26,9 @@ p {
 }
 
 h2 {
-    font-family: cursive;
-    font-size: 6.5rem;
+    font-family: 'Berkshire Swash', cursive;
     font-weight: bolder;
+    font-size: 6.5rem;
     text-align: unset;
     margin: auto
 }
