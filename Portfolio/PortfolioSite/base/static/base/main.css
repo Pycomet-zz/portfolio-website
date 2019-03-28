@@ -1,38 +1,46 @@
 body {
-    color: rgb(4, 72, 133);
     height: 100%;
     width: 100%;
     background: url('blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: linen
 }
 
-#picture {
-    background: url(background12.jpg); 
+#link {
+    color: rgb(190, 119, 5)
 }
 
+span#one {
+    font-size: 4rem
+}
+
+#pict {
+    text-align: center
+}
+
+p {
+    font-family: fantasy;
+    font-size: 1.5rem
+}
 
 h2 {
     font-family: cursive;
     font-size: 6.5rem;
     font-weight: bolder;
-    color: rgba(0, 0, 0, 0.876);
     text-align: unset;
     margin: auto
 }
 
-.go {
-    padding-left: 60%
-}
-
-img {
-    width: 300px;
-    height: 300px
+#mypic {
+    width: 350px;
+    height: 350px;
+    border: 5px solid rgb(190, 119, 5)
 }
 
 #head {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     color: rgb(190, 119, 5);
     font-weight: bolder;
@@ -40,22 +48,13 @@ img {
 }
 
 #mail {
-    margin-left: 70rem
-}
-
-#yellow {
-    color: black
+    margin-left: 80rem
 }
 
 h4 {
-    color: rgba(5, 1, 1, 0.904);
     font-weight: 600;
     font-size: 2.5rem;
     text-align: center
-}
-
-#card {
-    font-family: cursive
 }
 
 #mine {
@@ -73,9 +72,9 @@ ul {
 }
 
 #tabs {
-    background-color: rgba(240, 248, 255, 0.541);
+    background-color: rgba(29, 31, 32, 0.541);
     padding: 10px;
-    margin: 5% auto;
+    margin: 3% auto;
     text-align: left
 }
 
@@ -85,15 +84,14 @@ em {
 
 span {
     color: rgb(255, 157, 0);
-    font-weight: bold
-    /* border-bottom: 2px solid rgb(247, 106, 25) */
+    font-weight: bolder
 }
 
 h3 {
     font-family: 'Franklin Gothic Medium';
     font-size: 30px;
     margin: auto;
-    color: rgb(54, 58, 3);
+    color: rgb(217, 226, 96);
     font-weight: bold;
 }
 
@@ -106,14 +104,6 @@ h3 {
     text-align: left;
     font-size: 40px;
     margin: 20% auto;
-}
-
-.navbar-brand {
-    color: honeydew
-}
-
-img {
-    background: url("backing.jpg")
 }
 
 .cont {
@@ -134,15 +124,5 @@ img {
 }
 
 hr {
-    border-bottom: 1px solid #66cbfa
-}
-
-#articles {
-    background: rgb(110, 172, 253);
-    color: azure;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    float: left;
-    width: 30%;
+    border-bottom: 1px solid #d9e0e4
 }

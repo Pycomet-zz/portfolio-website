@@ -1,25 +1,41 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block content %}
-    <div id="mine" class="container-fluid">
+    <div id="mine" class="container">
+        <div id="pict" class="container-centered">
+                <img id="mypic" src="{% static 'base/img/picture2.jpg' %}">
+        </div>
+        <div id="tabs">
+            <p>
+                    <span id="one">A</span>lfred Emmanuel Inyang. I am Nigerian, a student of the Federal University of Technology, Minna. I love technology because it is presently the fastest growing update to human civilization. Nothing is the beyound the reach of the world wide web.           
+            </p>
+            <p>
+                    Being a self-taught python programmer, I have always loved the idea of robots and mind-blowing gadgets that think on their own. Now being a mechanical engineering student, I have made time to also learn programming on my own and build my dream. Learning keeps me going as I want to keep improving and acquiring more skill for the future. The future is evolving and the technology growth is already so advanced, imagine it in a few more years from now. I want to take part in that change and be a major contribution to the success of the world.
+            </p>
+            <p>
+                    Most of my free time is dedicated to learning more code and improving my skills. I further digged into web development from django backend which was amazing for me and I love every part of it. After taking a whole course on django framework by Corey Schaefer and some other resources too, I built my first web application which was a blog.
+            </p>
+            <p>
+                    After that, I did more improvement on my django skills like knowing more about how django works. Basically just messing around trying to know what everything does which turned out really being much fun. I now had to learn how to design my frontend also. I learnt Html, Css and basic syntax for JavaScript which was exciting because I could easily relate this to my prior python experience making JS easier to understand.
+            </p>
+            <p>
+                    After taking quality time to incrementally build my skills, I guarantee beautiful and responsive websites with fully-functional capabilities and good content for startup businesses and also improve or create new amazing features to your already published web application. I am looking out to build strong win-win relationship with my clients, so I always work hard and dedicated to delivering top quality context. I also have experience working with SEO(Search Engine Optimisation) and SMM(Social Media Marketting), be rest assured of your context targeting your desired audience. 
+            </p>
+            <p>
+                    You can go to my portfolio page <a href="{% url 'portfolio' %}">here</a> to see more detailed information about my skillset. Thank you for coming to my website.
 
-        <!-- <img class="rounded-circle account-img" src="{{ MEDIA_URL }} pictures/default.jpg"> -->
-        <p id='content'>
-            I am a <span>Freelancer</span>, I help solve problems weighed on my clients, develop dynamic applications and software to perform very specific ideas and automated tasks. I also write articles to share ideas and knowledge for blogs and websites based on research and my point of view.
-        </p>
-        <p id='content'>
-            I have a knack for solving problems. I aim at always achieving a win-win for clients, I am values driven and passionate about the services I provide and do the utmost best to produce an outstanding delivery that can not be replicated. I believe I can do anything, all I need to do is give time to the power of learning.
-        </p>
-        <p id='content'>    
-            Other extracurricular activities include being an active member to a team of programmers working together only to solve problems and synergism to create new ideas and make the world a better place for everyone.
-        </p>
-        <p id='content'>    
-            Do you want unique and well drafted posts on your website? Or are you having problems with any Python based software or want one created for you to scrape websites, automate any task on your computer or any related activity? Please do not hesitate to contact me 
-        </p>
-        <ul id='content'>
-            <li>CALL ME:-    +2348187827291</li>
-            <li>MAIL ME:-    <a href="">Alfredemmanuelinyang@gmail.com</a></li>
-        </ul>
+            </p>
+            <p><div>
+                    CONTACT ME ON:   
+                    <a id="head" href="" class='navbar-brand'><i class="fab fa-twitter"></i></a>
+                    <a id="head" href="https://www.instagram.com/_al_fr_ed" class='navbar-brand'><i class="fab fa-instagram"></i></a>
+                    <a id="head" href="" class='navbar-brand'><i class="fab fa-linkedin"></i></a>
+                </div>
+            </p>
+        <a id="link" class="btn btn-outline-info" href="{% url 'hire' %}">SEND A MESSAGE TO AlFRED</a>
+
+        </div>
         
     </div>
 {% endblock %}

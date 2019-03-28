@@ -7,8 +7,8 @@ from django.db.models.signals import post_save
 class Contact(models.Model):
     """Portfolio model"""
     
-    email = models.EmailField()
-    subject = models.CharField(max_length=100)
+    email = models.EmailField(help_text='Example: Alfredemmanuelinyang@gmail.com')
+    subject = models.CharField(max_length=100, help_text='Subject of discussion')
     message = models.TextField(max_length=10000)
     
     def __str__(self):
