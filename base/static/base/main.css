@@ -47,19 +47,19 @@ a {
     color: inherit
 }
 .handle {  
-    width: 100%;
-    background: rgba(173, 100, 100, 0.486);
-    text-align: left;
+    width: 40%;
+    background-color: rgba(2, 11, 19, 0.822);
+    text-align: center;
     cursor: pointer;
     display: none;
-    color: rgb(190, 119, 5);
-    font-weight: bold;
+    color: rgb(252, 160, 13);
+    font-weight: bolder;
     font-family: cursive
 }
 #mypic {
     width: 350px;
     height: 350px;
-    border: 5px solid rgb(190, 119, 5)
+    border: 5px solid rgb(190, 119, 5);
 }
 h2 {
     font-family: 'Berkshire Swash', cursive;
