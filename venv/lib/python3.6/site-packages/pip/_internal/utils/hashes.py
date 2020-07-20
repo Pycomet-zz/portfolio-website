@@ -5,20 +5,22 @@ import hashlib
 from pip._vendor.six import iteritems, iterkeys, itervalues
 
 from pip._internal.exceptions import (
-    HashMismatch, HashMissing, InstallationError,
+    HashMismatch,
+    HashMissing,
+    InstallationError,
 )
 from pip._internal.utils.misc import read_chunks
 from pip._internal.utils.typing import MYPY_CHECK_RUNNING
 
 if MYPY_CHECK_RUNNING:
-    from typing import (  # noqa: F401
+    from typing import (
         Dict, List, BinaryIO, NoReturn, Iterator
     )
     from pip._vendor.six import PY3
     if PY3:
-        from hashlib import _Hash  # noqa: F401
+        from hashlib import _Hash
     else:
-        from hashlib import _hash as _Hash  # noqa: F401
+        from hashlib import _hash as _Hash
 
 
 # The recommended hash algo of the moment. Change this whenever the state of
@@ -44,6 +46,20 @@ class Hashes(object):
         """
         self._allowed = {} if hashes is None else hashes
 
+    @property
+    def digest_count(self):
+        # type: () -> int
+        return sum(len(digests) for digests in self._allowed.values())
+
+    def is_hash_allowed(
+        self,
+        hash_name,   # type: str
+        hex_digest,  # type: str
+    ):
+        # type: (...) -> bool
+        """Return whether the given hex digest is allowed."""
+        return hex_digest in self._allowed.get(hash_name, [])
+
     def check_against_chunks(self, chunks):
         # type: (Iterator[bytes]) -> None
         """Check good hashes against ones built from iterable of chunks of
@@ -57,7 +73,9 @@ class Hashes(object):
             try:
                 gots[hash_name] = hashlib.new(hash_name)
             except (ValueError, TypeError):
-                raise InstallationError('Unknown hash name: %s' % hash_name)
+                raise InstallationError(
+                    'Unknown hash name: {}'.format(hash_name)
+                )
 
         for chunk in chunks:
             for hash in itervalues(gots):

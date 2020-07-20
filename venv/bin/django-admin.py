@@ -1,4 +1,4 @@
-#!/home/comet/Documents/My_Projectts/Portfolio/venv/bin/python3
+#!/home/codefred/Documents/MyPortfolio/portfolio-website/venv/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
